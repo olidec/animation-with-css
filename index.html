@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation with CSS</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        h1 {
-            color: deeppink;
-        }
+        @keyframes fade {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.fade {
+    animation: fade 3s;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    color: deeppink;
+}
     </style>
 </head>
 <body>
